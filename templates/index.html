@@ -10,9 +10,14 @@
         </style>
     </head>
     <body>
-         <h1>AJ loves BBQ</h1>   
+            {% for insult in boxes.insults.all %}
+            <div>
+            <h1>{{ insult.name }}</h1>
+            </div>
+            {% endfor %}  
          <h2>{{ theme.options.main.header_image.alt_text }}</h2>
          <img src="{{ theme.options.main.header_image.url }}" />
          <em>A theme by: {{ theme.config.theme.name }}</em>
+
     </body>
 </html>
