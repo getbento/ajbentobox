@@ -12,7 +12,7 @@
     <body> 
             {% for insult in boxes.insults.all %}
             <div>
-            <h1>{{ insults.name }}</h1>
+            <h1>{{ insults.all.name }}</h1>
             </div>
             {% endfor %}  
          <h2>{{ theme.options.main.header_image.alt_text }}</h2>
