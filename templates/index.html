@@ -29,6 +29,19 @@
                 letter-spacing: 6px;
                 line-height: 1;
             }
+
+            nav {
+                text-align: right;
+            }
+            nav a {
+    font-family: lexend deca;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-decoration: none;
+    margin-left: 1rem;
+            }
         </style>
     </head>
     <body> 
@@ -38,7 +51,7 @@
                 <a href="{{ item.url }}">{{ item.name }}</a> <br>
             {% endfor %}
         </nav>
-        
+
 {% block body %}
 
         <h1>{{ insult.name }}</h1>
