@@ -11,8 +11,9 @@
     </head>
     <body> 
 
-        <!-- Comment -->
-            {{ boxes.insults.all|random }}
+        {% set insult = boxes.insults.all|random %}
+
+        {{ insult.name }}
 
          <h2>{{ theme.options.main.header_image.alt_text }}</h2>
          <img src="{{ theme.options.main.header_image.url }}" />
