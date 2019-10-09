@@ -6,20 +6,22 @@
         <title>
             {{ account.name }}
         </title>
+        <link href="https://fonts.googleapis.com/css?family=Barlow:900|Lexend+Deca&display=swap" rel="stylesheet">
         <style>
             body {
                 background-color: {{ insult.fields.background_color }};
+                font-size: Lexend Deca;
+            }
+
+            h1 {
+                font-size: 50px;
+                font-weight: 900;
             }
         </style>
     </head>
     <body> 
 
-        {{ insult.name }}
-        
-
-         <h2>{{ theme.options.main.header_image.alt_text }}</h2>
-         <img src="{{ theme.options.main.header_image.url }}" />
-         <em>A theme by: {{ theme.config.theme.name }}</em>
+        <h1>{{ insult.name }}</h1>
 
     </body>
 </html>
