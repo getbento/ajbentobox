@@ -30,6 +30,10 @@
                 line-height: 1;
             }
 
+            h2 {
+                font-size: 4rem;
+            }
+
             nav {
                 text-align: right;
             }
@@ -45,11 +49,7 @@
         </style>
     </head>
     <body> 
-            <script>
-                    function refreshPage(){
-                        window.location.reload();
-                    } 
-                    </script>
+            
         <nav>
             {% for item in navs.main %}
                 <a href="{{ item.url }}">{{ item.name }}</a>
@@ -61,5 +61,10 @@
         <h1>{{ insult.name }}</h1>
         <button type="submit"  onClick="refreshPage()">Refresh Button</button>
 {% endblock %}
+    <script>
+        function refreshPage(){
+            window.location.reload();
+        }  
+    </script>
     </body>
 </html>
