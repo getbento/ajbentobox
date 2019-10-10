@@ -45,7 +45,11 @@
         </style>
     </head>
     <body> 
-
+            <script>
+                    function refreshPage(){
+                        window.location.reload();
+                    } 
+                    </script>
         <nav>
             {% for item in navs.main %}
                 <a href="{{ item.url }}">{{ item.name }}</a>
