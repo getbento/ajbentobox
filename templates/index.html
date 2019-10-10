@@ -6,6 +6,7 @@
         <title>
             {{ account.name }}
         </title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <style>
             @import url('https://fonts.googleapis.com/css?family=Barlow:900|Lexend+Deca&display=swap');
             
@@ -45,6 +46,25 @@
                 letter-spacing: 3px;
                 text-decoration: none;
                 margin-left: 3rem;
+            }
+            .controls {
+                width: calc(100% - 6rem);
+                position: fixed;
+                text-align: right;
+                bottom: 3rem;
+            }
+
+            .refresh {
+                display: inline-block;
+                width: 50%;
+            }
+
+            .refresh button {
+                font-family: Material Icons;
+                font-size: 6rem;
+                color: #fff;
+                background: transparent;
+                border: none;
             }
         </style>
     </head>
